@@ -1,0 +1,18 @@
+// prisma/schema.prisma
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model ScenarioRun {
+  id        String   @id @default(cuid())
+  type      String   // "success" | "validation_error" | "system_error" | "slow_request" | "teapot"
+  status    String   // "completed" | "failed" | "rejected"
+  duration  Int?     // milliseconds
+  error     String?
+  metadata  Json?    // e.g. { easter: true } for teapot runs
+  createdAt DateTime @default(now())
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "name": "nestjs-best-practices",
+    "reason": "Enforces NestJS module structure, DI patterns, and decorator usage that Cursor would otherwise guess incorrectly."
+  },
+  {
+    "name": "prisma-orm",
+    "reason": "Knows Prisma schema syntax, relation definitions, and migration commands — prevents raw SQL and ORM substitution."
+  },
+  {
+    "name": "shadcn-ui",
+    "reason": "Knows exact shadcn component APIs (import paths, prop names) — prevents Cursor from inventing non-existent props."
+  },
+  {
+    "name": "tailwind-v4-shadcn",
+    "reason": "Ensures Tailwind utility class usage is correct for the version in use; prevents class name guessing."
+  },
+  {
+    "name": "docker-expert",
+    "reason": "Handles Dockerfile, Compose networking, volume mounts, and healthcheck syntax correctly."
+  },
+  {
+    "name": "postgresql-table-design",
+    "reason": "Guides index design, constraint naming, and schema decisions when Prisma schema needs optimization."
+  }
+]

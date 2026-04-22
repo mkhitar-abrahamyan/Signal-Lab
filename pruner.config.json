@@ -1,0 +1,23 @@
+{
+  "outputFormat": "xml",
+  "tokenBudget": 8000,
+  "depthMap": {
+    "apps/backend/src/**": "skeleton",
+    "apps/backend/prisma/**": "full",
+    "apps/frontend/src/app/**": "skeleton",
+    "apps/frontend/src/components/**": "skeleton",
+    "apps/frontend/src/lib/**": "full",
+    "infra/**": "full",
+    "prisma/**": "full",
+    ".cursor/skills/**": "none",
+    ".cursor/rules/**": "none",
+    ".cursor/commands/**": "none",
+    ".cursor/hooks/**": "none",
+    "**/*.test.ts": "none",
+    "**/*.spec.ts": "none",
+    "**/node_modules/**": "none",
+    "**/dist/**": "none"
+  },
+  "preserveTypes": true,
+  "includeDevDependencies": false
+}
